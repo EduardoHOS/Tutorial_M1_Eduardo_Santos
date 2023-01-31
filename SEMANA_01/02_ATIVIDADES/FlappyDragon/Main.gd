@@ -1,9 +1,10 @@
 extends Node # instancia a classe Node2D
 
-var status = 1
-var vscore = 0
-var x = 1.5 
-var y = 1.5 
+var status = 1 #  Indica a condição de que o jogo está acontecendo para ele funcionar. Quando diferente de um o jogo não funciona por não estar no parâmetro posto como condição.
+var vscore = 0 # Alterando a variável em si não percebi a alteração da funcionalidade jogo, mesmo iniciando o jogo novamente. A todo modo observando o código entendi que ela está diretamente ligada com a pontuação do jogo, e 0, indica a numeração que inicia a pontuação.
+var x = 2.5 # Variável está  ligada ao movimento da animação o eixo x. E denota a velocidade que o personagem\animação percorre ao longo do jogo. Todavia, não possui nem uma forma de crescimento de aceleração da velocidade, se mantendo na velocidade indicada de forma igual por todo o percurso
+var y = 1.5 # Altera a gravidade exercida no personagem/animação, tornando mais fácil o movimento em direção ao chão, mas o mesmo não acontece para "subir" o dragão.
+
 
 # executa essa função ao carregar o jogo
 func _ready():
