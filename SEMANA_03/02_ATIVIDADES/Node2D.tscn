@@ -1,0 +1,80 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Node2D.gd" type="Script" id=1]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Button_lista1" type="Button" parent="."]
+margin_left = 126.0
+margin_top = 44.0
+margin_right = 291.0
+margin_bottom = 64.0
+text = "Ingredientes de receita "
+
+[node name="Button_lista2" type="Button" parent="."]
+margin_left = 500.0
+margin_top = 163.0
+margin_right = 651.0
+margin_bottom = 183.0
+rect_pivot_offset = Vector2( -662, -145 )
+text = "Enviar "
+
+[node name="lista_vazia_ex2" type="LineEdit" parent="."]
+margin_left = 491.0
+margin_top = 76.0
+margin_right = 758.0
+margin_bottom = 150.0
+rect_pivot_offset = Vector2( 162, 25 )
+
+[node name="Label" type="Label" parent="lista_vazia_ex2"]
+margin_left = 3.0
+margin_top = -24.0
+margin_right = 109.0
+margin_bottom = -10.0
+rect_pivot_offset = Vector2( -168, -117 )
+text = "Preencha valores da lista:"
+
+[node name="Button_lista3" type="Button" parent="."]
+margin_left = 607.0
+margin_top = 257.0
+margin_right = 758.0
+margin_bottom = 277.0
+rect_pivot_offset = Vector2( -662, -145 )
+text = "Click para verdade"
+
+[node name="lista_ex4" type="LineEdit" parent="."]
+margin_left = 491.0
+margin_top = 366.0
+margin_right = 758.0
+margin_bottom = 440.0
+rect_pivot_offset = Vector2( -428, -41 )
+
+[node name="Label" type="Label" parent="lista_ex4"]
+margin_left = 7.0
+margin_top = -23.0
+margin_right = 113.0
+margin_bottom = -9.0
+rect_pivot_offset = Vector2( -168, -117 )
+text = "Me conte uma verdade"
+
+[node name="Button_lista4" type="Button" parent="."]
+margin_left = 496.0
+margin_top = 449.0
+margin_right = 647.0
+margin_bottom = 469.0
+rect_pivot_offset = Vector2( -662, -145 )
+text = "Enviar "
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+show_behind_parent = true
+margin_left = 41.0
+margin_top = 90.0
+margin_right = 350.0
+margin_bottom = 358.0
+
+[connection signal="pressed" from="Button_lista1" to="." method="_on_Button_lista1_pressed"]
+[connection signal="pressed" from="Button_lista1" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Button_lista2" to="." method="_on_Button_lista2_pressed"]
+[connection signal="pressed" from="Button_lista3" to="." method="_on_Button_lista3_pressed"]
+[connection signal="pressed" from="Button_lista4" to="." method="_on_Button_lista4_pressed"]
